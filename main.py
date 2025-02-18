@@ -15,7 +15,7 @@ class Item(BaseModel):
     is_done: bool = False
     '''
     curl -X POST -H "Content-Type: application/json" -d '{"text":"apple"}' 'http://127.0.0.1:8000/items' <-- Will Work if we remove '= None'
-    curl -X POST -H "Content-Type: application/json" -d '{"text":"apple"}' 'http://127.0.0.1:8000/items' <-- Will work if there is no text field requirement
+    curl -X POST -H "Content-Type: application/json" -d '{"title":"apple"}' 'http://127.0.0.1:8000/items' <-- Will work if there is no text field requirement
     '''
 
 items = []
